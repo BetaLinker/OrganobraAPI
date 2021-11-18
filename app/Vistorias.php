@@ -9,7 +9,7 @@ class Vistorias extends Model
     protected $table = 'vistorias';
     protected $primaryKey = 'idVistoria';
 
-    private $fillable = [
+    protected $fillable = [
         'dataVistoria',
         'relatorio'
     ];
