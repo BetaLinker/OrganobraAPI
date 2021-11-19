@@ -17,6 +17,8 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
+//TESTE
+
 //Rotas de Obras
 Route::get('/obras','ObrasController@getAll');
 
