@@ -10,9 +10,26 @@ class ProprietariosController extends Controller
     //Resgata Todas os Proprietários
     public function getAll(){
 
-        $vistorias = Proprietarios::all();
+        $proprietario = Proprietarios::all();
         
-        return $vistorias;   
+        return $proprietario;   
 
+    }
+
+    public function insert(Request $request){
+
+        $data = $request->all();
+        $proprietario = new Proprietarios;
+
+        $proprietario->nome     = $data;
+        $proprietario->cpf      = $data;
+        $proprietario->endereco = $data;
+        $proprietario->celular  = $data;
+        $proprietario->telefone = $data;
+        $proprietario->email    = $data;
+        
+        $proprietario->save();
+
+        return $proprietario;
     }
 }

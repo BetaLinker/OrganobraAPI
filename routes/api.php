@@ -25,3 +25,4 @@ Route::get('/vistorias','VistoriasController@getAll');
 
 //Rotas de Proprietários
 Route::get('/proprietarios','ProprietariosController@getAll');
+Route::post('/addProprietarios','ProprietariosController@insert');
